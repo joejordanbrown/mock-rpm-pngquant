@@ -1,60 +1,39 @@
 Mock Version: 1.4.20
-ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'], chrootPath='/var/lib/mock/epel-7-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f9c7b9955f8>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'], chrootPath='/var/lib/mock/epel-7-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fd47533d5f8>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
 Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 Building target platforms: x86_64
 Building for target x86_64
 Wrote: /builddir/build/SRPMS/pngquant-2.12.5-1.el7.src.rpm
 Child return code was: 0
-ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'], chrootPath='/var/lib/mock/epel-7-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f9c7b9955f8>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'], chrootPath='/var/lib/mock/epel-7-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7fd47533d5f8>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=[]unshare_net=TrueprintOutput=True)
 Executing command: ['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/pngquant.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 Building target platforms: x86_64
 Building for target x86_64
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.prIktz
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.tzsEWC
 + umask 022
 + cd /builddir/build/BUILD
 + cd /builddir/build/BUILD
 + rm -rf pngquant-2.12.5
-+ /usr/bin/tar -xf -
 + /usr/bin/gzip -dc /builddir/build/SOURCES/pngquant-2.12.5.tar.gz
++ /usr/bin/tar -xf -
 + STATUS=0
 + '[' 0 -ne 0 ']'
 + cd pngquant-2.12.5
 + /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
-+ echo 'Patch #1 (pngquant-old_libpng.patch):'
 Patch #1 (pngquant-old_libpng.patch):
-+ /usr/bin/patch -p1 -b --suffix .oldlibpng --fuzz=0
++ echo 'Patch #1 (pngquant-old_libpng.patch):'
 + /usr/bin/cat /builddir/build/SOURCES/pngquant-old_libpng.patch
++ /usr/bin/patch -p1 -b --suffix .oldlibpng --fuzz=0
 patching file test/test.sh
-+ . /opt/rh/devtoolset-7/enable
-++ export PATH=/opt/rh/devtoolset-7/root/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/builddir/.local/bin:/builddir/bin
-++ PATH=/opt/rh/devtoolset-7/root/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/builddir/.local/bin:/builddir/bin
-++ export MANPATH=/opt/rh/devtoolset-7/root/usr/share/man:
-++ MANPATH=/opt/rh/devtoolset-7/root/usr/share/man:
-++ export INFOPATH=/opt/rh/devtoolset-7/root/usr/share/info
-++ INFOPATH=/opt/rh/devtoolset-7/root/usr/share/info
-++ export PCP_DIR=/opt/rh/devtoolset-7/root
-++ PCP_DIR=/opt/rh/devtoolset-7/root
-++ export PERL5LIB=/opt/rh/devtoolset-7/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-7/root/usr/lib/perl5:/opt/rh/devtoolset-7/root//usr/share/perl5/vendor_perl
-++ PERL5LIB=/opt/rh/devtoolset-7/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-7/root/usr/lib/perl5:/opt/rh/devtoolset-7/root//usr/share/perl5/vendor_perl
-+++ rpm --eval '%{_libdir}'
-++ rpmlibdir=/usr/lib64
-++ '[' /usr/lib64 '!=' /usr/ ']'
-++ rpmlibdir32=:/opt/rh/devtoolset-7/root/usr/lib
-++ export LD_LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib
-++ LD_LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib
-++ export LD_LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib:/opt/rh/devtoolset-7/root/usr/lib64/dyninst:/opt/rh/devtoolset-7/root/usr/lib/dyninst:/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib
-++ LD_LIBRARY_PATH=/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib:/opt/rh/devtoolset-7/root/usr/lib64/dyninst:/opt/rh/devtoolset-7/root/usr/lib/dyninst:/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib
-++ pythonvers=2.7
-++ export PYTHONPATH=/opt/rh/devtoolset-7/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-7/root/usr/lib/python2.7/site-packages
-++ PYTHONPATH=/opt/rh/devtoolset-7/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-7/root/usr/lib/python2.7/site-packages
++ scl enable devtoolset-7 bash
 + cd /builddir/build/BUILD
-+ gzip -dc /builddir/build/SOURCES/libpng-1.6.37.tar.gz
 + tar -xvvf -
++ gzip -dc /builddir/build/SOURCES/libpng-1.6.37.tar.gz
 + cd libpng-1.6.37
 + /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
 + mv /builddir/build/BUILD/libpng-1.6.37 /builddir/build/BUILD/pngquant-2.12.5/libpng
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.SOWGWd
 + exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.h1qSH1
 + umask 022
 + cd /builddir/build/BUILD
 + cd pngquant-2.12.5
@@ -389,7 +368,7 @@ gcc -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-st
 gcc -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic -fno-math-errno -funroll-loops -fomit-frame-pointer -fPIC -std=c99 -I. -O3 -DNDEBUG -DUSE_SSE=1 -msse -mfpmath=sse -fopenmp   -I./libpng     -DUSE_LCMS=1 -fexcess-precision=fast   -c -o rwpng.o rwpng.c
 gcc pngquant.o pngquant_opts.o rwpng.o -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic -fno-math-errno -funroll-loops -fomit-frame-pointer -fPIC -std=c99 -I. -O3 -DNDEBUG -DUSE_SSE=1 -msse -mfpmath=sse -fopenmp   -I./libpng     -DUSE_LCMS=1 -fexcess-precision=fast -fopenmp -limagequant   ./libpng/.libs/libpng16.a -lz   -llcms2   -lm -o pngquant
 + exit 0
-Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.tc3SaL
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.7LHXMn
 + umask 022
 + cd /builddir/build/BUILD
 + '[' /builddir/build/BUILDROOT/pngquant-2.12.5-1.el7.x86_64 '!=' / ']'
@@ -414,7 +393,7 @@ dwz: Too few files for multifile optimization
 + /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
 + /usr/lib/rpm/redhat/brp-python-hardlink
 + /usr/lib/rpm/redhat/brp-java-repack-jars
-Executing(%check): /bin/sh -e /var/tmp/rpm-tmp.Jobxam
+Executing(%check): /bin/sh -e /var/tmp/rpm-tmp.L3MfLM
 + umask 022
 + cd /builddir/build/BUILD
 + cd pngquant-2.12.5
@@ -427,7 +406,7 @@ should skip due to filesize
 OK
 + exit 0
 Processing files: pngquant-2.12.5-1.el7.x86_64
-Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.ShO8V1
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.UOnwEf
 + umask 022
 + cd /builddir/build/BUILD
 + cd pngquant-2.12.5
@@ -437,7 +416,7 @@ Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.ShO8V1
 + cp -pr README.md /builddir/build/BUILDROOT/pngquant-2.12.5-1.el7.x86_64/usr/share/doc/pngquant-2.12.5
 + cp -pr CHANGELOG /builddir/build/BUILDROOT/pngquant-2.12.5-1.el7.x86_64/usr/share/doc/pngquant-2.12.5
 + exit 0
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.g4xMMH
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.nz3ACI
 + umask 022
 + cd /builddir/build/BUILD
 + cd pngquant-2.12.5
@@ -455,7 +434,7 @@ Requires(rpmlib): rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) 
 Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/pngquant-2.12.5-1.el7.x86_64
 Wrote: /builddir/build/RPMS/pngquant-2.12.5-1.el7.x86_64.rpm
 Wrote: /builddir/build/RPMS/pngquant-debuginfo-2.12.5-1.el7.x86_64.rpm
-Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.qhAzSO
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.FECUec
 + umask 022
 + cd /builddir/build/BUILD
 + cd pngquant-2.12.5

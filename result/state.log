@@ -1,15 +1,15 @@
-2019-11-16 23:41:54,783 - Mock Version: 1.4.20
-2019-11-16 23:41:55,491 - Start: yum install
-2019-11-16 23:47:28,578 - Finish: yum install
-2019-11-16 23:47:29,802 - Start: creating root cache
-2019-11-16 23:48:18,848 - Finish: creating root cache
-2019-11-16 23:48:18,860 - Finish: chroot init
-2019-11-16 23:48:19,694 - Start: build phase for pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:48:19,719 - Start: build setup for pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:49:15,512 - Finish: build setup for pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:49:15,513 - Start: rpmbuild pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:49:15,522 - Start: Outputting list of installed packages
-2019-11-16 23:49:16,314 - Finish: Outputting list of installed packages
-2019-11-16 23:50:27,587 - Finish: rpmbuild pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:50:27,588 - Finish: build phase for pngquant-2.12.5-1.el7.src.rpm
-2019-11-16 23:50:27,608 - Finish: run
+2019-11-19 21:35:22,889 - Mock Version: 1.4.20
+2019-11-19 21:35:23,571 - Start: yum install
+2019-11-19 21:41:01,025 - Finish: yum install
+2019-11-19 21:41:02,077 - Start: creating root cache
+2019-11-19 21:41:48,516 - Finish: creating root cache
+2019-11-19 21:41:48,527 - Finish: chroot init
+2019-11-19 21:41:49,171 - Start: build phase for pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:41:49,189 - Start: build setup for pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:42:37,107 - Finish: build setup for pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:42:37,110 - Start: rpmbuild pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:42:37,118 - Start: Outputting list of installed packages
+2019-11-19 21:42:37,790 - Finish: Outputting list of installed packages
+2019-11-19 21:43:49,519 - Finish: rpmbuild pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:43:49,520 - Finish: build phase for pngquant-2.12.5-1.el7.src.rpm
+2019-11-19 21:43:49,553 - Finish: run

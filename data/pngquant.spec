@@ -39,7 +39,7 @@ their 24/32-bit version. %{name} uses the median cut algorithm.
 %endif
 
 # Enable devtoolset-7-gcc
-. /opt/rh/devtoolset-7/enable
+scl enable devtoolset-7 bash
 
 cd %{_builddir} && \
     gzip -dc %{_sourcedir}/libpng-1.6.37.tar.gz | tar -xvvf - &>/dev/null && \
@@ -272,7 +272,7 @@ cd %{_builddir}/%{name}-%{version} && \
 
 * Sat Sep 27 2014 Sérgio Basto <sergio@serjux.com> - 2.3.0-2
 - Disable SSE on i386, to workaround building on i386 ,
-  https://github.com/kornelski/pngquant/issues/122
+  https://github.com/pornel/pngquant/issues/122
 
 * Sat Sep 27 2014 Sérgio Basto <sergio@serjux.com> - 2.3.0-1
 - New upstream version 2.3.0

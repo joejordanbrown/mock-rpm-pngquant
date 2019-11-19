@@ -14,7 +14,7 @@ id -u mock &>/dev/null || useradd mock -g mock
 su --login mock --command "mock -r epel-7-x86_64 /tmp/pngquant-2.12.5-1.el7.src.rpm --old-chroot"
 
 # use --no-clean for debugging
-# su --login mock --command "mock -r custom_repos_centos-7-x86_64 /tmp/pngquant-2.12.5-1.el7.src.rpm --old-chroot --no-clean "
+# su --login mock --command "mock -r custom_repos_centos-7-x86_64 /tmp/pngquant-2.12.5-1.el7.src.rpm --old-chroot --no-clean"
 
 rm -rf /root/result/*
 
